@@ -79,6 +79,8 @@
         </section>
     </main>
 
+    <audio id="audio" src="/assets/audio/kitt.mp3"></audio>
+
     <script src="/assets/js/jquery-3.7.1.min.js"></script>
     <script>
         var current_light_index = 0;
@@ -114,10 +116,12 @@
 
         $("#start").on("click", () => {
             myInterval = setInterval(updateLightPanel, 50);
+            $("#audio")[0].play();
         });
 
         $("#stop").on("click", () => {
             myInterval = clearInterval(myInterval);
+            $("#audio")[0].pause();
         });
     </script>
 
