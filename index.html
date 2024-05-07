@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <title>KITT-JS</title>
     <link rel="stylesheet" href="/assets/normalize.css">
+
+    <style>
+
+        body {
+            background: black;
+        }
+
+        main {
+             width: fit-content;
+             height: fit-content;
+             position: absolute;
+
+             top: 0;
+             bottom: 0;
+             left: 0;
+             right: 0;
+             margin: auto;
+        }
+
+        #light-panel {
+             display: flex;
+             width: fit-content;
+             height: fit-content;
+             margin: auto;
+        }
+
+        #btn-panel {
+             text-align: center;
+             margin: 20px 0px;
+        }
+
+        .light {
+             width: 100px;
+             aspect-ratio: 2/1;
+             border: 2px solid black;
+             background: white;
+        }
+
+
+    </style>
+
 </head>
 <body>
+
+    <main>
+        <!-- Light Panel -->
+        <section id="light-panel">
+
+            <div class="light"></div> <!-- light 01 -->
+            <div class="light"></div> <!-- light 02 -->
+            <div class="light"></div> <!-- light 03 -->
+            <div class="light"></div> <!-- light 04 -->
+            <div class="light"></div> <!-- light 05 -->
+            <div class="light"></div> <!-- light 06 -->
+
+        </section>
+
+        <!-- Button Panel -->
+        <section id="btn-panel">
+
+            <button type="button" id="start">Start</button>
+            <button type="button" id="stop">Stop</button>
+
+        </section>
+    </main>
 
 </body>
 </html>
